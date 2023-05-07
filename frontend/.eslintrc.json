@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "airbnb",
+    "airbnb-typescript"
+  ],
+  "ignorePatterns":["next.config.js"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+    "react/jsx-one-expression-per-line": "off",
+    "react/prop-types": 0,
+    "no-underscore-dangle": "off",
+    "max-len": [
+      "error",
+      {
+        "code": 120
+      }
+    ],
+    "react/jsx-no-bind": [0]
+  }
+}
